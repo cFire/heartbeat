@@ -2,12 +2,17 @@ package main
 
 import (
 	"fmt"
+	"net"
+	"time"
 	"net/http"
+	"crypto/tls"
 	"encoding/json"
 	"log"
 	"io"
 	"os"
 	"runtime"
+	"strings"
+	"strconv"
 )
 
 /* Service definition */
@@ -15,6 +20,7 @@ type Service struct {
 	Id			int
 	HostId		int
 	Name		string
+	Host		string
 	Port		int
 	Ssl			bool
 	Request		string
@@ -86,6 +92,7 @@ func runChecks() {
 		for _,s := range h.Services {
 			s.Id = sId
 			s.HostId = hId
+			s.Host = h.Address
 			go doCheck(s)
 			sId++
 		}
@@ -95,7 +102,56 @@ func runChecks() {
 
 /* Slave function for running checks */
 func doCheck(s Service) {
-	s.Result = "All is well."
+	if s.Ssl == true {
+		conn, err := tls.Dial("tcp", s.Host + ":" + strconv.Itoa(s.Port), &tls.Config{})
+		if err != nil {
+			s.Result = "<span style='color:red'>FAILED: " + err.Error() + "</span>"
+		} else {
+			if s.Request != "" {
+				fmt.Fprintf(conn, s.Request)
+			}
+
+			var r = make([]byte, len(s.Response))
+			_,e := conn.Read(r)
+			if e != nil {
+				if e != io.EOF {
+					s.Result = "<span style='color:red'>FAILED: " + e.Error() + "</span>"
+				}
+			}
+			conn.Close()
+
+			if strings.Contains(string(r), s.Response) {
+				s.Result = "<span style='color:green'>OK</span>"
+			} else {
+				s.Result = "<span style='color:orange'>WARNING: Unexpected response</span>"
+			}
+		}
+	} else {
+		conn, err := net.DialTimeout("tcp", s.Host + ":" + strconv.Itoa(s.Port), 10*time.Second)
+		if err != nil {
+			s.Result = "<span style='color:red'>FAILED: " + err.Error() + "</span>"
+		} else {
+			if s.Request != "" {
+				fmt.Fprintf(conn, s.Request)
+			}
+
+			var r = make([]byte, len(s.Response))
+			_,e := conn.Read(r)
+			if e != nil {
+				if e != io.EOF {
+					s.Result = "<span style='color:red'>FAILED: " + e.Error() + "</span>"
+				}
+			}
+			conn.Close()
+
+			if strings.Contains(string(r), s.Response) {
+				s.Result = "<span style='color:green'>OK</span>"
+			} else {
+				s.Result = "<span style='color:orange'>WARNING: Unexpected response</span>"
+			}
+		}
+	}
+
 	ch <- s
 }
 
@@ -121,25 +177,21 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	var resultSet []Service
 	resultSet = collectResults()
 
-	/* Display results */
-	for _,r := range resultSet {
-		fmt.Print(r.Id)
-		fmt.Print(" ")
-		fmt.Print(r.Name)
-		fmt.Print(" ")
-		fmt.Println(r.Result)
-	}
+	/* Display results in original order */
+	var output = "<table>\n"
+
 	var sId = 0
 	var hId = 0
+
+	/* Loop hosts */
 	for _,h := range conf.Hosts {
+		output = output + "<tr><td><strong>" + h.Name + "</strong></td></tr>\n"
+
+		/* Loop services */
 		for range h.Services {
 			for _,r := range resultSet {
 				if r.HostId == hId && r.Id == sId {
-					fmt.Print(r.Id)
-					fmt.Print(" ")
-					fmt.Print(r.Name)
-					fmt.Print(" ")
-					fmt.Println(r.Result)
+					output = output + "<tr><td>" + r.Name + "</td><td>" + r.Result + "</td></tr>\n"
 				}
 			}
 			sId++
@@ -147,8 +199,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		hId++
 	}
 
-	fmt.Println("Done.")
-	fmt.Fprintf(w, "All done!")
+	output = output + "</table>\n"
+	fmt.Fprintf(w, output)
 }
 
 func main() {
