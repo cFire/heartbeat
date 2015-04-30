@@ -12,15 +12,19 @@ import (
 
 /* Service definition */
 type Service struct {
+	Id			int
+	HostId		int
 	Name		string
 	Port		int
 	Ssl			bool
 	Request		string
 	Response	string
+	Result		string
 }
 
 /* Host definition */
 type Host struct {
+	Id			int
 	Name		string
 	Address		string
 	Services	[]Service
@@ -34,6 +38,15 @@ type Config struct {
 
 /* Global config object */
 var conf Config
+
+/* Global synchronization object */
+//var wg sync.WaitGroup
+
+/* Global counter for processes and services */
+var ncpu = 0
+
+/* Global channel for result collection */
+var ch = make(chan Service)
 
 /* Load configuration */
 func loadConfig() {
@@ -58,8 +71,6 @@ func loadConfig() {
 
 /* Count and set the number of threads we need */
 func setThreading() {
-	var ncpu = 0
-
 	for _,h := range conf.Hosts {
 		ncpu += len(h.Services)
 	}
@@ -68,25 +79,76 @@ func setThreading() {
 
 /* Master function for running checks */
 func runChecks() {
-	var id = 0
+	var sId = 0
+	var hId = 0
 	for _,h := range conf.Hosts {
+		h.Id = hId
 		for _,s := range h.Services {
-			go doCheck(id, s)
-			id++
+			s.Id = sId
+			s.HostId = hId
+			go doCheck(s)
+			sId++
 		}
+		hId++
 	}
 }
 
 /* Slave function for running checks */
-func doCheck(id int, s Service) {
-	fmt.Println(id, s.Name)
+func doCheck(s Service) {
+	s.Result = "All is well."
+	ch <- s
+}
+
+/* Read results from channel */
+func collectResults() []Service {
+	var resultSet []Service
+	var c = 0
+	for c < ncpu {
+		result := <-ch
+		resultSet = append(resultSet, result)
+		c++
+	}
+
+	return resultSet
 }
 
 /* Handler function for HTTP requests */
 func handler(w http.ResponseWriter, r *http.Request) {
 	/* Start checks */
 	runChecks()
-	fmt.Fprintf(w, "%s", conf)
+
+	/* Wait for checks to finish */
+	var resultSet []Service
+	resultSet = collectResults()
+
+	/* Display results */
+	for _,r := range resultSet {
+		fmt.Print(r.Id)
+		fmt.Print(" ")
+		fmt.Print(r.Name)
+		fmt.Print(" ")
+		fmt.Println(r.Result)
+	}
+	var sId = 0
+	var hId = 0
+	for _,h := range conf.Hosts {
+		for range h.Services {
+			for _,r := range resultSet {
+				if r.HostId == hId && r.Id == sId {
+					fmt.Print(r.Id)
+					fmt.Print(" ")
+					fmt.Print(r.Name)
+					fmt.Print(" ")
+					fmt.Println(r.Result)
+				}
+			}
+			sId++
+		}
+		hId++
+	}
+
+	fmt.Println("Done.")
+	fmt.Fprintf(w, "All done!")
 }
 
 func main() {
