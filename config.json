@@ -2,9 +2,16 @@
 	"ListenAddress":":8080",
 	"Hosts":[
 		{
-			"Name":"Insomnia 24/7 main server",
+			"Name":"Main server",
 			"Address":"insomnia247.nl",
 			"Services":[
+				{
+					"Name":"FTP",
+					"Port":21,
+					"Ssl":false,
+					"Request":"",
+					"Response":"220 ProFTPD 1.3.5 Server (Lydia) [80.112.131.85]"
+				},
 				{
 					"Name":"SSH",
 					"Port":22,
@@ -13,38 +20,172 @@
 					"Response":"SSH-2.0-OpenSSH_6.7p1 Debian-5"
 				},
 				{
-					"Name":"Apache HTTP",
+					"Name":"SMTP",
+					"Port":25,
+					"Ssl":false,
+					"Request":"",
+					"Response":"220 insomnia247.nl ESMTP Postfix (Debian/GNU)"
+				},
+				{
+					"Name":"POP3S",
+					"Port":995,
+					"Ssl":true,
+					"Request":"",
+					"Response":"+OK Dovecot ready."
+				},
+				{
+					"Name":"IMAPS",
+					"Port":993,
+					"Ssl":true,
+					"Request":"",
+					"Response":"* OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE AUTH=PLAIN] Dovecot ready."
+				},
+				{
+					"Name":"HTTP",
 					"Port":80,
 					"Ssl":false,
 					"Request":"GET / HTTP/1.1\r\nHost: insomnia247.nl\r\n\r\n",
 					"Response":"HTTP/1.1 301 Moved Permanently"
 				},
 				{
-					"Name":"Apache HTTPS",
+					"Name":"HTTPS",
 					"Port":443,
 					"Ssl":true,
 					"Request":"GET / HTTP/1.1\r\nHost: insomnia247.nl\r\n\r\n",
 					"Response":"HTTP/1.1 301 Moved Permanently"
+				},
+				{
+					"Name":"MySQL",
+					"Port":3306,
+					"Ssl":false,
+					"Request":"",
+					"Response":"W\u0000\u0000\u0000\n5.5.43-0+deb8u1-log"
 				}
 			]
 		},
 		{
-			"Name":"Insomnia 24/7 Gitlab server",
+			"Name":"Gitlab server",
 			"Address":"gitlab.insomnia247.nl",
 			"Services":[
 				{
-					"Name":"Gitlab SSH",
+					"Name":"SSH",
 					"Port":33,
 					"Ssl":false,
 					"Request":"",
 					"Response":"SSH-2.0-OpenSSH_6.6.1"
 				},
 				{
-					"Name":"Gitlab HTTPS",
+					"Name":"Web interface",
 					"Port":443,
 					"Ssl":true,
 					"Request":"GET / HTTP/1.1\r\nHost: gitlab.insomnia247.nl\r\n\r\n",
 					"Response":"HTTP/1.1 302 Found"
+				}
+			]
+		},
+		{
+			"Name":"Owncloud server",
+			"Address":"owncloud.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"Web interface",
+					"Port":443,
+					"Ssl":true,
+					"Request":"GET / HTTP/1.1\nHost: owncloud.insomnia247.nl\n\n",
+					"Response":"HTTP/1.1 200 OK"
+				},
+				{
+					"Name":"WebDAV",
+					"Port":443,
+					"Ssl":true,
+					"Request":"GET /remote.php/webdav HTTP/1.1\nHost: owncloud.insomnia247.nl\n\n",
+					"Response":"HTTP/1.1 401 Unauthorized"
+				}
+			]
+		},
+		{
+			"Name":"Wiki server",
+			"Address":"wiki.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"HTTP",
+					"Port":80,
+					"Ssl":false,
+					"Request":"GET / HTTP/1.1\nHost: wiki.insomnia247.nl\n\n",
+					"Response":"HTTP/1.1 301 Moved Permanently"
+				}
+			]
+		},
+		{
+			"Name":"Backup server",
+			"Address":"backup.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"Web interface",
+					"Port":80,
+					"Ssl":false,
+					"Request":"GET / HTTP/1.1\nHost: backup.insomnia247.nl\n\n",
+					"Response":"HTTP/1.1 200 OK"
+				}
+			]
+		},
+		{
+			"Name":"Wargames server",
+			"Address":"wargames.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"Game web interface",
+					"Port":80,
+					"Ssl":false,
+					"Request":"GET / HTTP/1.1\r\nHost: wargames.insomnia247.nl\r\n\r\n",
+					"Response":"HTTP/1.1 200 OK"
+				},
+				{
+					"Name":"Target 1",
+					"Port":10131,
+					"Ssl":false,
+					"Request":"",
+					"Response":"SSH-2.0-OpenSSH_5.1p1 Debian-5"
+				},
+				{
+					"Name":"Target 2",
+					"Port":10132,
+					"Ssl":false,
+					"Request":"",
+					"Response":"SSH-2.0-OpenSSH_5.1p1 Debian-5"
+				},
+				{
+					"Name":"Target 3",
+					"Port":10133,
+					"Ssl":false,
+					"Request":"",
+					"Response":"SSH-2.0-OpenSSH_5.1p1 Debian-5"
+				}
+			]
+		},
+		{
+			"Name":"TOR search 2 server",
+			"Address":"search2.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"HTTP",
+					"Port":80,
+					"Ssl":false,
+					"Request":"GET / HTTP/1.1\r\nHost: search2.insomnia247.nl\r\n\r\n",
+					"Response":"HTTP/1.1 200 OK"
+				}
+			]
+		},
+		{
+		"Name":"EyeOS server",
+			"Address":"eyeos.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"HTTP",
+					"Port":80,
+					"Ssl":false,
+					"Request":"GET / HTTP/1.1\r\nHost: eyeos.insomnia247.nl\r\n\r\n",
+					"Response":"HTTP/1.1 200 OK"
 				}
 			]
 		}

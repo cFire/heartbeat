@@ -119,7 +119,7 @@ func doCheck(s Service) {
 				}
 			}
 			conn.Close()
-
+			
 			if strings.Contains(string(r), s.Response) {
 				s.Result = "<span style='color:green'>OK</span>"
 			} else {
