@@ -102,6 +102,7 @@ func runChecks() {
 
 /* Slave function for running checks */
 func doCheck(s Service) {
+	start := time.Now()
 	if s.Ssl == true {
 		conn, err := tls.Dial("tcp", s.Host + ":" + strconv.Itoa(s.Port), &tls.Config{})
 		if err != nil {
@@ -151,6 +152,8 @@ func doCheck(s Service) {
 			}
 		}
 	}
+
+	s.Result = s.Result + " (" + fmt.Sprintf("%s", time.Since(start)) + ")"
 
 	ch <- s
 }

@@ -130,7 +130,7 @@
 			]
 		},
 		{
-			"Name":"Vrtual machine server",
+			"Name":"Virtual machine server",
 			"Address":"vm.insomnia247.nl",
 			"Services":[
 				{
