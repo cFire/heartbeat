@@ -59,7 +59,7 @@
 					"Port":3306,
 					"Ssl":false,
 					"Request":"",
-					"Response":"z\u0000\u0000\u0000"
+					"Response":"S\u0000\u0000\u0000\n5.5.44-0+deb8u1"
 				}
 			]
 		},
