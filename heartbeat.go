@@ -201,6 +201,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	output = output + "</table>\n"
 	fmt.Fprintf(w, output)
+	resultSet = nil
 }
 
 func main() {

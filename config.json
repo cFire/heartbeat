@@ -130,6 +130,19 @@
 			]
 		},
 		{
+			"Name":"Vrtual machine server",
+			"Address":"vm.insomnia247.nl",
+			"Services":[
+				{
+					"Name":"Web interface",
+					"Port":443,
+					"Ssl":true,
+					"Request":"GET / HTTP/1.1\nHost: vm.insomnia247.nl\n\n",
+					"Response":"HTTP/1.1 200 OK"
+				}
+			]
+		},
+		{
 			"Name":"Wargames server",
 			"Address":"wargames.insomnia247.nl",
 			"Services":[
