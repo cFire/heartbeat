@@ -59,26 +59,26 @@
 					"Port":3306,
 					"Ssl":false,
 					"Request":"",
-					"Response":"S\u0000\u0000\u0000\n5.5.44-0+deb8u1"
+					"Response":"S\u0000\u0000\u0000\n5.5.46-0+deb8u1"
 				}
 			]
 		},
 		{
 			"Name":"Gitlab server",
-			"Address":"gitlab.insomnia247.nl",
+			"Address":"git.insomnia247.nl",
 			"Services":[
 				{
 					"Name":"SSH",
 					"Port":33,
 					"Ssl":false,
 					"Request":"",
-					"Response":"SSH-2.0-OpenSSH_6.6.1"
+					"Response":"SSH-2.0-OpenSSH_5.3"
 				},
 				{
 					"Name":"Web interface",
 					"Port":443,
 					"Ssl":true,
-					"Request":"GET / HTTP/1.1\r\nHost: gitlab.insomnia247.nl\r\n\r\n",
+					"Request":"GET / HTTP/1.1\r\nHost: git.insomnia247.nl\r\n\r\n",
 					"Response":"HTTP/1.1 302 Found"
 				}
 			]
@@ -144,7 +144,7 @@
 		},
 		{
 			"Name":"Wargames server",
-			"Address":"wargames.insomnia247.nl",
+			"Address":"80.112.131.85",
 			"Services":[
 				{
 					"Name":"Game web interface",
