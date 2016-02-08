@@ -10,7 +10,7 @@
 					"Port":21,
 					"Ssl":false,
 					"Request":"",
-					"Response":"220 ProFTPD 1.3.5 Server (Lydia) [80.112.131.85]"
+					"Response":"220 ProFTPD 1.3.5 Server (Lydia) [198.251.84.27]"
 				},
 				{
 					"Name":"SSH",
@@ -24,7 +24,7 @@
 					"Port":25,
 					"Ssl":false,
 					"Request":"",
-					"Response":"220 insomnia247.nl ESMTP Postfix (Debian/GNU)"
+					"Response":"220 gateway.insomnia247.nl ESMTP Postfix (Debian/GNU)"
 				},
 				{
 					"Name":"POP3S",
@@ -65,7 +65,7 @@
 		},
 		{
 			"Name":"Gitlab server",
-			"Address":"git.insomnia247.nl",
+			"Address":"198.251.84.27",
 			"Services":[
 				{
 					"Name":"SSH",
@@ -144,7 +144,7 @@
 		},
 		{
 			"Name":"Wargames server",
-			"Address":"80.112.131.85",
+			"Address":"198.251.84.27",
 			"Services":[
 				{
 					"Name":"Game web interface",
