@@ -65,7 +65,7 @@
 		},
 		{
 			"Name":"Gitlab server",
-			"Address":"198.251.84.27",
+			"Address":"git.insomnia247.nl",
 			"Services":[
 				{
 					"Name":"SSH",
