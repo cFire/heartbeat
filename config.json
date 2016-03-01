@@ -72,7 +72,7 @@
 					"Port":33,
 					"Ssl":false,
 					"Request":"",
-					"Response":"SSH-2.0-OpenSSH_5.3"
+					"Response":"SSH-2.0-OpenSSH_6.6.1"
 				},
 				{
 					"Name":"Web interface",
