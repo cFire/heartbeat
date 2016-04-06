@@ -188,19 +188,6 @@
 					"Response":"HTTP/1.1 200 OK"
 				}
 			]
-		},
-		{
-		"Name":"EyeOS server",
-			"Address":"eyeos.insomnia247.nl",
-			"Services":[
-				{
-					"Name":"HTTP",
-					"Port":80,
-					"Ssl":false,
-					"Request":"GET / HTTP/1.1\r\nHost: eyeos.insomnia247.nl\r\n\r\n",
-					"Response":"HTTP/1.1 200 OK"
-				}
-			]
 		}
 	]
 }
