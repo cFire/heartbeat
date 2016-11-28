@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <style type="text/css">
+    td{
+      padding-right: 20px;
+    }
+    .OK{
+      color: green;
+    }
+    .WARNING{
+      color: orange;
+    }
+    .ERROR{
+      color: red;
+    }
+    .message-date{
+      font-weight: bold;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+<p>
+  <table>
+    <tr>
+      <th>Server</th>
+      <th>Service</th>
+      <th>Status</th>
+      <th>Last check</th>
+      <th>Response time</th>
+    </tr>
+<%  @content.each do |serverName, services| %>
+<%    services.each do |serviceName, serviceData| %>
+    <tr>
+      <td><%= serverName %></td>
+      <td><%= serviceName %></td>
+      <td class="<%= serviceData['status'] %>"><%= serviceData['status'] %></td>
+      <td><%= serviceData['lastCheck'] %></td>
+      <td><%= serviceData['responseTime'] %></td>
+    </tr>
+<%    end %>
+<%  end %>
+  </table>
+</p>
+<%  @messages.each do |message| %>
+<p>
+  <h4><%= message['title'] %></h4>
+  <div class="message-body"><%= message['body'] %></div>
+  <div class="message-date"><%= message['date'] %></div>
+</p>
+<%  end %>
+</body>
+</html>

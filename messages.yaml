@@ -1,0 +1,9 @@
+---
+-
+  date:  'some date'
+  title: 'A message title goes here'
+  body:  'Some message body'
+-
+  date:  'some date 2'
+  title: 'A message title goes here 2'
+  body:  'Some message body 2'

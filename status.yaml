@@ -1,0 +1,23 @@
+---
+'Server 1':
+  'Service 1.1':
+    status:       OK
+    lastCheck:    Sometime recent
+    responseTime: 100ms
+  'Service 1.2':
+    status:       OK
+    lastCheck:    Sometime recent
+    responseTime: who knows...
+  'Service 1.3':
+    status:       WARNING
+    lastCheck:    Foo was barred
+    responseTime: who knows...
+'Server 2':
+  'Service 2.1':
+    status:       OK
+    lastCheck:    Sometime recent
+    responseTime: who knows...
+  'Service 2.2':
+    status:       ERROR
+    lastCheck:    It's all gone tits-up
+    responseTime: who knows...
