@@ -12,7 +12,7 @@
     .WARNING{
       color: orange;
     }
-    .ERROR{
+    .DOWN{
       color: red;
     }
     .message-date{
@@ -22,6 +22,7 @@
   </style>
 </head>
 <body>
+<h2>Service status</h2>
 <p>
   <table>
     <tr>
@@ -37,18 +38,19 @@
       <td><%= serverName %></td>
       <td><%= serviceName %></td>
       <td class="<%= serviceData['status'] %>"><%= serviceData['status'] %></td>
-      <td><%= serviceData['lastCheck'] %></td>
-      <td><%= serviceData['responseTime'] %></td>
+      <td><%= (Time.now - serviceData['lastCheck']).floor %> sec ago</td>
+      <td><%= serviceData['responseTime'] %> ms</td>
     </tr>
 <%    end %>
 <%  end %>
   </table>
 </p>
+<h2>Known issues</h2>
 <%  @messages.each do |message| %>
 <p>
   <h4><%= message['title'] %></h4>
-  <div class="message-body"><%= message['body'] %></div>
   <div class="message-date"><%= message['date'] %></div>
+  <div class="message-body"><%= message['body'] %></div>
 </p>
 <%  end %>
 </body>

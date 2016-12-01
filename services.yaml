@@ -1,0 +1,127 @@
+---
+'Shell host':
+  address: 'insomnia247.nl'
+  services:
+    FTP:
+      type:   tcp
+      port:   21
+      ssl:    false
+      expect: '220 ProFTPD'
+    SSH:
+      type:   tcp
+      port:   22
+      ssl:    false
+      expect: 'SSH-2.0-OpenSSH'
+    SMTP:
+      type:   tcp
+      port:   25
+      ssl:    false
+      expect: '220 gateway.insomnia247.nl ESMTP Postfix'
+    HTTP:
+      type:   http
+      port:   80
+      ssl:    false
+      get:    '/'
+      expect: '302 Found'
+    HTTPS:
+      type:   http
+      port:   443
+      ssl:    true
+      get:    '/'
+      vhost:  'www.insomnia247.nl'
+      expect: 'News - Insomnia 24/7'
+    IMAPS:
+      type:   tcp
+      port:   993
+      ssl:    true
+      expect: 'Dovecot ready'
+    POP3S:
+      type:   tcp
+      port:   995
+      ssl:    true
+      expect: 'Dovecot ready'
+    MySQL:
+      type:   tcp
+      port:   3306
+      ssl:    false
+      expect: '5.5.53-0+deb8u1'
+'Gitlab server':
+  address: 'git.insomnia247.nl'
+  services:
+    SSH:
+      type:   tcp
+      port:   33
+      ssl:    false
+      expect: 'SSH-2.0-OpenSSH'
+    Web interface:
+      type:   http
+      port:   443
+      ssl:    true
+      get:    '/users/sign_in'
+      expect: 'GitLab Community Edition'
+'Owncloud':
+  address: 'owncloud.insomnia247.nl'
+  services:
+    HTTPS:
+      type:    http
+      port:    443
+      ssl:     true
+      get:     '/index.php/login'
+      expect:  'ownCloud'
+    WebDAV:
+      type:    http
+      port:    443
+      ssl:     true
+      get:     '/remote.php/webdav'
+      expect:  '401 Unauthorized'
+'Wiki server':
+  address: 'wiki.insomnia247.nl'
+  services:
+    HTTPS:
+      type:   http
+      port:   443
+      ssl:    true
+      get:    '/wiki/Main_Page'
+      expect: 'Insomnia 24/7 wiki'
+'VM host':
+  address: 'vm.insomnia247.nl'
+  services:
+    HTTPS:
+      type:   http
+      port:   443
+      ssl:    true
+      get:    '/'
+      expect: 'Proxmox Virtual Environment'
+'Wargames':
+  address: 'wargames.insomnia247.nl'
+  services:
+    HTTP:
+      type:   http
+      port:   80
+      ssl:    false
+      get:    '/'
+      expect: 'Insomnia 24/7 wargames'
+    Target 1:
+      type:   tcp
+      port:   10131
+      ssl:    false
+      expect: 'SSH-2.0-OpenSSH'
+    Target 2:
+      type:   tcp
+      port:   10132
+      ssl:    false
+      expect: 'SSH-2.0-OpenSSH'
+    Target 3:
+      type:   tcp
+      port:   10133
+      ssl:    false
+      expect: 'SSH-2.0-OpenSSH'
+'Tor search 2':
+  address: 'search2.insomnia247.nl'
+  services:
+    HTTP:
+      type:   http
+      port:   80
+      ssl:    false
+      get:    '/'
+      expect: 'TOR search engine'
