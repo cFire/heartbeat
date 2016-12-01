@@ -1,0 +1,5 @@
+---
+-
+  date:  'Dec 1 2016'
+  title: 'MySQL service DOWN'
+  body:  'The MySQL service is reported as being down because we are currently not allowing external connections to it. This is a security consideration because of a known MySQL bug. We will restore external connectivity at such time as it is deemed safe to do so.'
