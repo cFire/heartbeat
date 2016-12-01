@@ -4,7 +4,6 @@ GEM
     mini_portile2 (2.1.0)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-    openssl (2.0.0)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
@@ -19,7 +18,6 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri
-  openssl
   sinatra
 
 BUNDLED WITH
