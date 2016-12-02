@@ -1,3 +1,3 @@
-require File.expand_path '../HeartbeatApp.rb', __FILE__
+require File.expand_path '../heartbeat_app.rb', __FILE__
 
 run Sinatra::Application

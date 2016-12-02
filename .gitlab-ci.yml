@@ -1,0 +1,12 @@
+before_script:
+  - gem install rubocop --no-ri --no-rdoc
+syntax:
+  script:
+    - find . -name '*\.rb' -exec bash -c 'echo -ne "{}\t\t\t" && ruby -c {}' \;
+  tags:
+    - ruby
+style:
+  script:
+    - rubocop -f s
+  tags:
+    - ruby
