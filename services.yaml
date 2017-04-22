@@ -16,7 +16,7 @@
       type:   tcp
       port:   25
       ssl:    false
-      expect: '220 gateway.insomnia247.nl ESMTP Postfix'
+      expect: '220 gateway02.insomnia247.nl ESMTP Postfix'
     HTTP:
       type:   http
       port:   80
@@ -59,15 +59,15 @@
       ssl:    true
       get:    '/users/sign_in'
       expect: 'GitLab Community Edition'
-'Owncloud':
-  address: 'owncloud.insomnia247.nl'
+'Nextcloud':
+  address: 'nextcloud.insomnia247.nl'
   services:
     HTTPS:
       type:    http
       port:    443
       ssl:     true
       get:     '/index.php/login'
-      expect:  'ownCloud'
+      expect:  'Nextcloud'
     WebDAV:
       type:    http
       port:    443
