@@ -1,5 +1,9 @@
 ---
 -
+  date:  'Jun 3 2017'
+  title: 'Planned upgrade to Debian 9'
+  body:  'We are planning to upgrade to Debian 9 on Sunday the 9th of June. Expect some service downtime for the duration of the upgrade process.'
+-
   date:  'Dec 1 2016'
   title: 'MySQL service DOWN'
   body:  'The MySQL service is reported as being down because we are currently not allowing external connections to it. This is a security consideration because of a known MySQL bug. We will restore external connectivity at such time as it is deemed safe to do so.'
