@@ -1,5 +1,9 @@
 ---
 -
+  date:  'Aug 6 2017'
+  title: 'Main server down'
+  body:  'Our main server is refusing to power up. We are working on resolving the issue.'
+-
   date:  'Jul 8 2017'
   title: 'Upgrade to Debian 9'
   body:  'We are upgraded to Debian 9 (Stretch) today. The upgrade is finished and no further downtime should occur.'
