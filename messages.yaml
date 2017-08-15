@@ -1,8 +1,8 @@
 ---
 -
-  date:  'Aug 6 2017'
-  title: 'Main server down'
-  body:  'Our main server is refusing to power up. We are working on resolving the issue.'
+  date:  'Aug 15 2017'
+  title: 'Main server degraded performance'
+  body:  'Following last weeks hardware failure we are currently still running in degraded performance mode with only half the CPU cores available. Since we need to source some new hardware to permanently fix this, it will likely take a few weeks before we are back to full capacity.'
 -
   date:  'Jul 8 2017'
   title: 'Upgrade to Debian 9'
