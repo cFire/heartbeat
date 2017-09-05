@@ -1,9 +1,5 @@
 ---
 -
-  date:  'Aug 29 2017'
-  title: 'Virtual machine host down'
-  body:  'One of our virtual machine host nodes is currently experiencing some hardware issues. Supplementary services like the wiki and the "manager" command may not work correctly.'
--
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
   body:  'Following last weeks hardware failure we are currently still running in degraded performance mode with only half the CPU cores available. Since we need to source some new hardware to permanently fix this, it will likely take a few weeks before we are back to full capacity.'
