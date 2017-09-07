@@ -2,7 +2,7 @@
 -
   date:  'Sep 7 2017'
   title: 'Server down'
-  body:  'Never have I beheld such a relentless clusterfuck. While replacing the server for a hardware upgrade, the new machine decided to pretty well kill itself. It fried (at least) one major chip on the motherboard, the RAID controller that was in there, and every drive in the array. As it happens the raid controller and the drives where transplanted from the old machine. I think you see where this is going. Long story short: It'll likely be a few days before I've found replacement drives, reinstalled the OS, and restored user data backups.'
+  body:  'Never have I beheld such a relentless clusterfuck. While replacing the server for a hardware upgrade, the new machine decided to pretty well kill itself. It fried (at least) one major chip on the motherboard, the RAID controller that was in there, and every drive in the array. As it happens the raid controller and the drives where transplanted from the old machine. I think you see where this is going. Long story short: It will likely be a few days before I have found replacement drives, reinstalled the OS, and restored user data backups.'
 -
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
