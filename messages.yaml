@@ -1,8 +1,8 @@
 ---
 -
-  date:  'Dec 8 2017'
-  title: 'Ongoing network connectivity issues'
-  body:  'During the early hours of December 8th we suffered a lightning strike which damaged some of our routing equipment. We have a temporary replacement in place but it does not appear to be fully up to the task and occasionally we will still lose our connectivity. A proper replacement is expected to be installed over the next 2 or 3 days.'
+  date:  'Dec 9 2017'
+  title: 'Network issues'
+  body:  'During the early hours of December 8th we suffered a lightning strike which damaged some of our routing equipment. We have now replaced the faulty equipment with a permanent new machine. Everything should be back to normal.'
 -
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
