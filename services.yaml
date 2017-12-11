@@ -82,7 +82,7 @@
       port:   443
       ssl:    true
       get:    '/wiki/Main_Page'
-      expect: 'Insomnia 24/7 wiki'
+      expect: 'Main Page'
 'VM host':
   address: 'vm.insomnia247.nl'
   services:
