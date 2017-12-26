@@ -1,5 +1,9 @@
 ---
 -
+  date:  'Dec 26 2017'
+  title: 'Network outage'
+  body:  'Our main ISP is experiencing issues providing connectivity. This outage is still ongoing. No ETA to recovery is known at this time.'
+-
   date:  'Dec 9 2017'
   title: 'Network issues'
   body:  'During the early hours of December 8th we suffered a lightning strike which damaged some of our routing equipment. We have now replaced the faulty equipment with a permanent new machine. Everything should be back to normal.'
