@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class EndOfRead < RuntimeError
 end
 
@@ -94,7 +96,7 @@ class CheckTCP < CheckService
     socket
   end
 
-  def socket_check(response = '', socket = TCPSocket)
+  def socket_check(response = '')
     socket = socket_open
 
     Timeout.timeout(3, EndOfRead) do

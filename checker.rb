@@ -1,4 +1,5 @@
-require 'thread'
+# frozen_string_literal: true
+
 require 'yaml'
 require './checker_services.rb'
 
