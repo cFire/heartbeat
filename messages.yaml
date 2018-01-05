@@ -1,9 +1,5 @@
 ---
 -
-  date:  'Dec 26 2017'
-  title: 'Network outage'
-  body:  'Connectivity has been restored after an outage earlier today. We are still waiting to hear back from our ISP as to the exact cause of the outage.'
--
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
   body:  'Following last weeks hardware failure we are currently still running in degraded performance mode with only half the CPU cores available. Since we need to source some new hardware to permanently fix this, it will likely take a few weeks before we are back to full capacity.'
