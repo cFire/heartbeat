@@ -2,7 +2,7 @@
 -
   date:  'Feb 9 2018'
   title: 'Main server down'
-  body:  'We are having technical issues with our main server. We are currently investigating the problem.'
+  body:  'We are having technical issues with our main server. We are currently investigating the problem.<br/>Update: Hardware failure caused this outage. We are currently getting replacements and will be restoring a backup of last night.'
 -
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
