@@ -1,5 +1,9 @@
 ---
 -
+  date:  'Feb 9 2018'
+  title: 'Main server down'
+  body:  'We are having technical issues with our main server. We are currently investigating the problem.'
+-
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
   body:  'Following last weeks hardware failure we are currently still running in degraded performance mode with only half the CPU cores available. Since we need to source some new hardware to permanently fix this, it will likely take a few weeks before we are back to full capacity.'
