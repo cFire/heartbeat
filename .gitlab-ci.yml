@@ -1,12 +1,27 @@
-before_script:
-  - gem install rubocop --no-ri --no-rdoc
-syntax:
+
+stages:
+  - syntax
+  - linting
+
+rbsyntax:
+  stage: syntax
   script:
     - find . -name '*\.rb' -exec bash -c 'echo -ne "{}\t\t\t" && ruby -c {}' \;
-  tags:
-    - ruby
-style:
+  image: ruby:latest
+
+ruby:
+  stage: linting
   script:
+    - gem install rubocop --no-ri --no-rdoc
     - rubocop -f s
-  tags:
-    - ruby
+  image: ruby:latest
+
+yaml:
+  stage: linting
+  script:
+    - apt-get update -qq
+    - apt-get install -y -qq python3-pip python3-setuptools
+    - pip3 install yamllint
+    - yamllint -v
+    - yamllint -s .
+  image: ubuntu:16.04
