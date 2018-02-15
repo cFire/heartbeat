@@ -1,9 +1,5 @@
 ---
 -
-  date:  'Feb 9 2018'
-  title: 'Main server down'
-  body:  'We are having technical issues with our main server. We are currently investigating the problem.<br/>Update: Hardware failure caused this outage. We are currently getting replacements and will be restoring a backup of last night.<br />Update: Backup is restored and server is mostly operationsal again. Still working on repairing MySQL databases.<br />Update: MySQL database recovery is finished. Everything should be back to normal.'
--
   date:  'Aug 15 2017'
   title: 'Main server degraded performance'
   body:  'Following last weeks hardware failure we are currently still running in degraded performance mode with only half the CPU cores available. Since we need to source some new hardware to permanently fix this, it will likely take a few weeks before we are back to full capacity.'
