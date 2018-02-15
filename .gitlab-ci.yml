@@ -1,27 +1,22 @@
-
+---
 stages:
   - syntax
   - linting
-
 rbsyntax:
   stage: syntax
   script:
     - find . -name '*\.rb' -exec bash -c 'echo -ne "{}\t\t\t" && ruby -c {}' \;
   image: ruby:latest
-
 ruby:
   stage: linting
   script:
     - gem install rubocop --no-ri --no-rdoc
     - rubocop -f s
   image: ruby:latest
-
 yaml:
   stage: linting
   script:
-    - apt-get update -qq
-    - apt-get install -y -qq python3-pip python3-setuptools
     - pip3 install yamllint
     - yamllint -v
     - yamllint -s .
-  image: ubuntu:16.04
+  image: python:latest
