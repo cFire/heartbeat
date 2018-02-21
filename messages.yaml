@@ -6,11 +6,3 @@
     degraded performance mode with only half the CPU cores available. Since we
     need to source some new hardware to permanently fix this, it will likely
     take a few weeks before we are back to full capacity.
--
-  date: 'Dec 1 2016'
-  title: 'MySQL service DOWN'
-  body: >
-    The MySQL service is reported as being down because we are currently not
-    allowing external connections to it. This is a security consideration
-    because of a known MySQL bug. We will restore external connectivity at such
-    time as it is deemed safe to do so.

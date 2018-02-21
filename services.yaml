@@ -40,11 +40,6 @@
       port: 995
       ssl: true
       expect: 'Dovecot ready'
-    MySQL:
-      type: tcp
-      port: 3306
-      ssl: false
-      expect: '5.5.53-0+deb8u1'
 'Gitlab server':
   address: 'git.insomnia247.nl'
   services:
