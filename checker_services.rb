@@ -51,6 +51,7 @@ class CheckHTTP < CheckService
     uri + ":#{@parameters['port']}#{@parameters['get']}"
   end
 
+  # rubocop:disable Security/Open
   def uri_check
     Timeout.timeout(10) do
       doc = Nokogiri::HTML open(uri_builder, redirect: false)
@@ -61,6 +62,7 @@ class CheckHTTP < CheckService
   rescue StandardError => e
     STDERR.puts e
   end
+  # rubocop:enable Security/Open
 end
 
 # Checks for responses on TCP sockets
