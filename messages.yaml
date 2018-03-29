@@ -1,11 +1,5 @@
 ---
 -
-  date: 'Mar 29 2018'
-  title: 'Service unreachable'
-  body: Our ISP is performing scheduled maintenance on their fiberoptic cables.
-    Downtime is expected to last at until 7am local time (NL/Amsterdam) at the
-    latest.
--
   date: 'Aug 15 2017'
   title: 'Main server degraded performance'
   body: Following last weeks hardware failure we are currently still running in
