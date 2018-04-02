@@ -9,7 +9,7 @@ get '/' do
   @content  = YAML.load_file('status.yaml')
   @messages = YAML.load_file('messages.yaml')
 
-  if request.user_agent =~ /wget|curl/i
+  if request.user_agent.match?(/wget|curl/i)
     content_type :text
     erb :index_text
   else
