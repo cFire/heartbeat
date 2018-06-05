@@ -1,5 +1,10 @@
 ---
 -
+  date: 'Jun 5 2018'
+  title: 'Main server outage'
+  body: Our main server is currently down. We are investigating the issue and
+    will update on the issue as soon as further information becomes available.
+-
   date: 'Aug 15 2017'
   title: 'Main server degraded performance'
   body: Following last weeks hardware failure we are currently still running in
