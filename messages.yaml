@@ -1,15 +1,5 @@
 ---
 -
   date: 'Jun 5 2018'
-  title: 'Main server outage'
-  body: Our main server is currently down. We are investigating the issue and
-    will update on the issue as soon as further information becomes available.
-    <br />Update 1; It appears we are dealing with a hardware failure. Either
-    a CPU or a mainboard failure appears to be the direct cause of this outage.
--
-  date: 'Aug 15 2017'
-  title: 'Main server degraded performance'
-  body: Following last weeks hardware failure we are currently still running in
-    degraded performance mode with only half the CPU cores available. Since we
-    need to source some new hardware to permanently fix this, it will likely
-    take a few weeks before we are back to full capacity.
+  title: 'All services ok'
+  body: There are no known failures or outages at this time.
