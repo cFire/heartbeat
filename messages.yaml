@@ -1,5 +1,5 @@
 ---
 -
-  date: 'Jun 5 2018'
-  title: 'All services ok'
-  body: There are no known failures or outages at this time.
+  date: 'Jul 8 2018'
+  title: 'Intermittent service secondary outages'
+  body: We are currently upgrading our virutalization cluster, meaning some of our secondary services will occasionally go down today. No one service is expected to be down for more than an hour or so at the most.
