@@ -1,9 +1,115 @@
 ---
--
-  date: 'Sept 25 2018'
-  title: 'Main uplink is down'
-  status: 'Resolved'
-  body: >
-    Overnight our core router broke down. We are in the process of
-    replacing it. Services are expected to be fully restored within
-    a few hours.
+ongoing:
+resolved:
+  -
+    date: 'Sept 25 2018'
+    title: 'Main up-link is down'
+    body: >
+      Overnight our core router broke down. We are in the process of
+      replacing it. Services are expected to be fully restored within
+      a few hours (resolved).
+  -
+    date: 'Jul 8 2018'
+    title: 'Intermittent service secondary outages'
+    body: >
+      We are currently upgrading our virutalization cluster, meaning some of
+      our secondary services will occasionally go down today. No one service
+      is expected to be down for more than an hour or so at the most.
+  -
+    date: 'Jun 5 2018'
+    title: 'Main server outage'
+    body: >
+      Our main server is currently down. We are investigating the issue and
+      will update on the issue as soon as further information becomes available.
+
+      Update 1; It appears we are dealing with a hardware failure. Either a CPU
+      or a mainboard failure appears to be the direct cause of this outage.
+  -
+    date: 'Mar 29 2018'
+    title: 'Service unreachable'
+    body: >
+      Our ISP is performing scheduled maintenance on their fiberoptic cables.
+      Downtime is expected to last at until 7am local time (NL/Amsterdam) at
+      the latest.
+  -
+    date: 'Feb 9 2018'
+    title: 'Main server down'
+    body: >
+      We are having technical issues with our main server. We are currently
+      investigating the problem.
+
+      Update: Hardware failure caused this
+      outage. We are currently getting replacements and will be restoring a
+      backup of last night.
+
+      Update: Backup is restored and server is mostly operational again.
+      Still working on repairing MySQL databases.
+
+      Update: MySQL database recovery is finished. Everything should be back
+      to normal.
+  -
+    date: 'Jan 24 2018'
+    title: 'Network outage'
+    body: >
+      Our upstream provider where we host our gateway is experiencing some
+      issues. Service should be restored soon.
+  -
+    date: 'Dec 26 2017'
+    title: 'Network outage'
+    body: >
+      Connectivity has been restored after an outage earlier today. We are
+      still waiting to hear back from our ISP as to the exact cause of the
+      outage.
+  -
+    date: 'Dec 9 2017'
+    title: 'Network issues'
+    body: >
+      During the early hours of December 8th we suffered a lightning strike
+      which damaged some of our routing equipment. We have now replaced the
+      faulty equipment with a permanent new machine. Everything should be back
+      to normal.
+  -
+    date: 'Sep 7 2017'
+    title: 'Server down'
+    body: >
+      Never have I beheld such a relentless clusterfuck. While replacing the
+      server for a hardware upgrade, the new machine decided to pretty well
+      kill itself. It fried (at least) one major chip on the motherboard, the
+      RAID controller that was in there, and every drive in the array. As it
+      happens the raid controller and the drives where transplanted from the
+      old machine. I think you see where this is going. Long story short: It
+      will likely be a few days before I have found replacement drives,
+      reinstalled the OS, and restored user data backups.
+  -
+    date: 'Aug 29 2017'
+    title: 'Virtual machine host down'
+    body: >
+      One of our virtual machine host nodes is currently experiencing some
+      hardware issues. Supplementary services like the wiki and the "manager"
+      command may not work correctly.
+  -
+    date: 'Aug 15 2017'
+    title: 'Main server degraded performance'
+    body: >
+      Following last weeks hardware failure we are currently still running in
+      degraded performance mode with only half the CPU cores available. Since
+      we need to source some new hardware to permanently fix this, it will
+      likely take a few weeks before we are back to full capacity.
+  -
+    date: 'Aug 6 2017'
+    title: 'Main server down'
+    body: >
+      Our main server is refusing to power up. We are working on resolving the
+      issue.
+  -
+    date: 'Jul 8 2017'
+    title: 'Upgrade to Debian 9'
+    body: >
+      We are upgraded to Debian 9 (Stretch) today.
+      The upgrade is finished and no further downtime should occur.
+  -
+    date: 'Jun 6 2017'
+    title: 'Planned upgrade to Debian 9'
+    body: >
+      We are planning to upgrade to Debian 9 on Saturday the 8th of July.
+      Expect some service downtime for the duration of the upgrade process.

@@ -1,0 +1,13 @@
+
+Resolved issues:
+<% unless @messages['resolved'].nil? %>
+<%   @messages['resolved'].each do |message| %>
+<%= message['title'] %> (<%= message['date'] %>)
+<%= message['body'] %>
+
+<%   end %>
+<% else %>
+None
+
+<% end %>
+

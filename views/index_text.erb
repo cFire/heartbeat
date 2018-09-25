@@ -1,3 +1,4 @@
+
 Service status
 
 <%=
@@ -16,12 +17,16 @@ serviceRows  = []
 end
 serviceTable.render(:ascii) %>
 
-Known issues
-
-<% @messages.each do |message| %>
-<%= message['title'] %> | <%= message['date'] %>:
-Status: <%= message['status'] %>
+Ongoing issues:
+<% unless @messages['ongoing'].nil? %>
+<%   @messages['ongoing'].each do |message| %>
+<%= message['title'] %> (<%= message['date'] %>)
 <%= message['body'] %>
 
+<%   end %>
+<% else %>
+None
 
 <% end %>
+See '/resolved-issues' for history.
+

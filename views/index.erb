@@ -19,12 +19,6 @@
       font-weight: bold;
       font-size: 90%;
     }
-    .message-status{
-      font-size: 90%;
-    }
-    .message-body{
-      padding-top: 10px;
-    }
   </style>
 </head>
 <body>
@@ -51,14 +45,18 @@
 <%  end %>
   </table>
 </p>
-<h2>Known issues</h2>
-<%  @messages.each do |message| %>
+<h2>Ongoing issues</h2>
+<% unless @messages['ongoing'].nil? %>
+<%   @messages['ongoing'].each do |message| %>
 <p>
   <h4><%= message['title'] %></h4>
   <div class="message-date"><%= message['date'] %></div>
-  <div class="message-status">Status: <%= message['status'] %></div>
-  <div class="message-body"><%= message['body'] %></div>
+  <div class="message-body"><%= message['body'].gsub("\n", '<br />') %></div>
 </p>
-<%  end %>
+<%   end %>
+<% else %>
+  <div class="message-body">None</div>
+<% end %>
+<p><a href="/resolved-issues">Resolved issues</a></p>
 </body>
 </html>

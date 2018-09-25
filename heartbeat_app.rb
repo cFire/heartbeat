@@ -16,3 +16,15 @@ get '/' do
     erb :index
   end
 end
+
+get '/resolved-issues' do
+  @title    = 'Resolved issues - Insomnia 24/7'
+  @messages = YAML.load_file('messages.yaml')
+
+  if request.user_agent.match?(/wget|curl/i)
+    content_type :text
+    erb :resolved_text
+  else
+    erb :resolved
+  end
+end

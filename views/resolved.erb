@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <style type="text/css">
+    .message-date{
+      font-weight: bold;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+<h2>Resolved issues</h2>
+<% unless @messages['resolved'].nil? %>
+<%   @messages['resolved'].each do |message| %>
+<p>
+  <h4><%= message['title'] %></h4>
+  <div class="message-date"><%= message['date'] %></div>
+  <div class="message-body"><%= message['body'].gsub("\n", '<br />') %></div>
+</p>
+<%   end %>
+<% else %>
+  <div class="message-body">None</div>
+<% end %>
+</body>
+</html>
