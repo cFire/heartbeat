@@ -2,4 +2,8 @@
 -
   date: 'Sept 25 2018'
   title: 'Main uplink is down'
-  body: Overnight our core router broke down. We are in the process of replacing it. Services are expected to be fully restored within a few hours.
+  status: 'Resolved'
+  body: >
+    Overnight our core router broke down. We are in the process of
+    replacing it. Services are expected to be fully restored within
+    a few hours.

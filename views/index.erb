@@ -19,6 +19,9 @@
       font-weight: bold;
       font-size: 90%;
     }
+    .message-status{
+      font-size: 90%;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +53,7 @@
 <p>
   <h4><%= message['title'] %></h4>
   <div class="message-date"><%= message['date'] %></div>
+  <div class="message-status"><%= message['status'] %></div>
   <div class="message-body"><%= message['body'] %></div>
 </p>
 <%  end %>
