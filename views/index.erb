@@ -22,6 +22,9 @@
     .message-status{
       font-size: 90%;
     }
+    .message-body{
+      padding-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -54,7 +57,7 @@
   <h4><%= message['title'] %></h4>
   <div class="message-date"><%= message['date'] %></div>
   <div class="message-status">Status: <%= message['status'] %></div>
-  <div class="message-body">Details: <br /><%= message['body'] %></div>
+  <div class="message-body"><%= message['body'] %></div>
 </p>
 <%  end %>
 </body>
