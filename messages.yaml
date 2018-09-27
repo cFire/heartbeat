@@ -1,6 +1,5 @@
 ---
 ongoing:
-resolved:
   -
     date: 'Sept 27 2018'
     title: 'ISP outage'
@@ -11,6 +10,9 @@ resolved:
       information becomes available.
 
       Update; Connectivity restored. Hopefully permanently.
+
+      Update; It appears to have failed again. Updates will be posted here again.
+resolved:
   -
     date: 'Sept 25 2018'
     title: 'Main up-link is down'
