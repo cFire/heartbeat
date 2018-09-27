@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Sept 27 2018'
     title: 'ISP outage'
@@ -10,7 +11,6 @@ ongoing:
       information becomes available.
 
       Update; Connectivity restored. Hopefully permanently.
-resolved:
   -
     date: 'Sept 25 2018'
     title: 'Main up-link is down'
