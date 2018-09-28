@@ -1,6 +1,15 @@
 ---
 ongoing:
   -
+    date: 'Oct 9 & 10 2018'
+    title: 'Planned power outages'
+    body: >
+      Planned maintenance to our electrical systems on October 9th and 10th
+      will result on 8 hours without power on both these days. This means the
+      bulk of our services will be unavailable for the duration of the
+      maintenance.
+resolved:
+  -
     date: 'Sept 27 2018'
     title: 'ISP outage'
     body: >
@@ -17,7 +26,6 @@ ongoing:
 
       Update; Aaaaaaand it's gone. I think it's safe to say our uplink is
       currently being somewhat unreliable.
-resolved:
   -
     date: 'Sept 25 2018'
     title: 'Main up-link is down'
