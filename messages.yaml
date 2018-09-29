@@ -1,6 +1,13 @@
 ---
 ongoing:
   -
+    date: 'Oct 30 2018'
+    title: 'Switching VPN up-link'
+    body: >
+      We will be switching over to a new VPN tunnel, this means the uplink
+      will be down for a few minutes. The IP address will be moved to the
+      new VPN tunnel so updating DNS records is not needed.
+  -
     date: 'Oct 9 & 10 2018'
     title: 'Planned power outages'
     body: >
