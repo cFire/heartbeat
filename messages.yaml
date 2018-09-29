@@ -1,7 +1,7 @@
 ---
 ongoing:
   -
-    date: 'Oct 30 2018'
+    date: 'Sep 30 2018'
     title: 'Switching VPN up-link'
     body: >
       We will be switching over to a new VPN tunnel, this means the uplink
@@ -17,7 +17,7 @@ ongoing:
       maintenance.
 resolved:
   -
-    date: 'Sept 27 2018'
+    date: 'Sep 27 2018'
     title: 'ISP outage'
     body: >
       Currently we cannot connect to our ISP. This appears to be an issue on
@@ -34,7 +34,7 @@ resolved:
       Update; Aaaaaaand it's gone. I think it's safe to say our uplink is
       currently being somewhat unreliable.
   -
-    date: 'Sept 25 2018'
+    date: 'Sep 25 2018'
     title: 'Main up-link is down'
     body: >
       Overnight our core router broke down. We are in the process of
