@@ -7,6 +7,10 @@ ongoing:
       We will be switching over to a new VPN tunnel, this means the uplink
       will be down for a few minutes. The IP address will be moved to the
       new VPN tunnel so updating DNS records is not needed.
+
+      Update; There was a misconfigured port forward for a few hours which
+      prevented people from connecting to our main server over SSH. A fix
+      has been pushed to the offending router.
   -
     date: 'Oct 9 & 10 2018'
     title: 'Planned power outages'
