@@ -1,6 +1,15 @@
 ---
 ongoing:
   -
+    date: 'Oct 9 & 10 2018'
+    title: 'Planned power outages'
+    body: >
+      Planned maintenance to our electrical systems on October 9th and 10th
+      will result on 8 hours without power on both these days. This means the
+      bulk of our services will be unavailable for the duration of the
+      maintenance.
+resolved:
+  -
     date: 'Sep 30 2018'
     title: 'Switching VPN up-link'
     body: >
@@ -11,15 +20,6 @@ ongoing:
       Update; There was a misconfigured port forward for a few hours which
       prevented people from connecting to our main server over SSH. A fix
       has been pushed to the offending router.
-  -
-    date: 'Oct 9 & 10 2018'
-    title: 'Planned power outages'
-    body: >
-      Planned maintenance to our electrical systems on October 9th and 10th
-      will result on 8 hours without power on both these days. This means the
-      bulk of our services will be unavailable for the duration of the
-      maintenance.
-resolved:
   -
     date: 'Sep 27 2018'
     title: 'ISP outage'
