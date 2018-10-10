@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Oct 9 & 10 2018'
     title: 'Planned power outages'
@@ -8,7 +9,6 @@ ongoing:
       will result on 8 hours without power on both these days. This means the
       bulk of our services will be unavailable for the duration of the
       maintenance.
-resolved:
   -
     date: 'Sep 30 2018'
     title: 'Switching VPN up-link'
