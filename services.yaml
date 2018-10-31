@@ -114,9 +114,9 @@
 'Tor search 2':
   address: 'search2.insomnia247.nl'
   services:
-    HTTP:
+    HTTPS:
       type: http
-      port: 80
-      ssl: false
+      port: 443
+      ssl: true
       get: '/'
       expect: 'TOR search engine'
