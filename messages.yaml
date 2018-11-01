@@ -1,12 +1,12 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Oct 31 2018'
     title: 'Migrating to new server'
     body: >
       We are switching over to our new server. In theory all should go smooth
       but in practice we expect some services will probably missbehave.
-resolved:
   -
     date: 'Oct 9 & 10 2018'
     title: 'Planned power outages'
