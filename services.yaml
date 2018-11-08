@@ -40,6 +40,13 @@
       port: 995
       ssl: true
       expect: 'Dovecot ready'
+    'Sign-up page':
+      type: http
+      port: 443
+      ssl: true
+      get: '/'
+      vhost: 'signup.insomnia247.nl'
+      expect: 'Welcome to the Insomnia 24/7 shells signup'
 'Gitlab server':
   address: 'git.insomnia247.nl'
   services:
