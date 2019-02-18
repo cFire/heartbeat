@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Feb 18 2019'
+    title: 'Packet loss'
+    body: >
+      We are having some problems with packet loss to our ISP. The issue is
+      under investigation.
 resolved:
   -
     date: 'Oct 31 2018'
