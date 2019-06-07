@@ -118,12 +118,3 @@
       port: 10133
       ssl: false
       expect: 'SSH-2.0-OpenSSH'
-'Tor search 2':
-  address: 'search2.insomnia247.nl'
-  services:
-    HTTPS:
-      type: http
-      port: 443
-      ssl: true
-      get: '/'
-      expect: 'TOR search engine'
