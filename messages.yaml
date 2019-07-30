@@ -6,6 +6,8 @@ ongoing:
     body: >
       Our ISP is having issues. Unfortunately we cannot do much other than
       wait for the problems to be resolved upstream.
+
+      Update; Upstream appears to have resolved the issue.
 resolved:
   -
     date: 'Feb 18 2019'
