@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Aug 17 2019'
     title: 'Main server upgrade'
@@ -8,7 +9,6 @@ ongoing:
      to Debian 10, however this weekend we will be upgrading the main
      server as well. Expect at least a few minutes of downtime during the
      day when the server reboots into the new OS version.
-resolved:
   -
     date: 'Jul 30 2019'
     title: 'ISP outage'
