@@ -34,12 +34,12 @@
       type: tcp
       port: 993
       ssl: true
-      expect: 'Dovecot ready'
+      expect: 'Dovecot (Debian) ready'
     POP3S:
       type: tcp
       port: 995
       ssl: true
-      expect: 'Dovecot ready'
+      expect: 'Dovecot (Debian) ready'
     'Sign-up page':
       type: http
       port: 443
