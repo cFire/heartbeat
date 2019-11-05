@@ -1,5 +1,12 @@
 ---
 ongoing:
+  -
+    date: 'Nov 5 2019'
+    title: 'Network down'
+    body: >
+      Our uplink is currently down. We have not yet been able to ascertain
+      the cause of the outage but our remote telemetry suggest we may not
+      be able to restore connectivity until we can get an engineer on site.
 resolved:
   -
     date: 'Aug 17 2019'
