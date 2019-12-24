@@ -47,6 +47,13 @@
       get: '/'
       vhost: 'signup.insomnia247.nl'
       expect: 'Welcome to the Insomnia 24/7 shells signup'
+    'Web shell':
+      type: http
+      port: 443
+      ssl: true
+      get: '/'
+      vhost: 'shell.insomnia247.nl'
+      expect: 'ShellInABox'
 'Gitlab server':
   address: 'git.insomnia247.nl'
   services:
