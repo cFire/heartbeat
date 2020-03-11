@@ -1,5 +1,12 @@
 ---
 ongoing:
+  -
+    date: 'Mar 11 2020'
+    title: 'Network outage'
+    body: >
+      Our ISP is currently doing maintenance which means we all services
+      besides IRC and this page are currently down. They expect to be up
+      and running again within the hour.
 resolved:
   -
     date: 'Dec 3 2019'
