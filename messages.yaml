@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Mar 30 2020'
     title: 'Networking issues'
@@ -8,7 +9,6 @@ ongoing:
       connecting to our service. If you have the addresses for any of
       our Insomnia Midnight Project endpoints, those should not be
       affected.
-resolved:
   -
     date: 'Mar 11 2020'
     title: 'Network outage'
