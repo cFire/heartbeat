@@ -1,5 +1,13 @@
 ---
 ongoing:
+  -
+    date: 'Mar 30 2020'
+    title: 'Networking issues'
+    body: >
+      Due to networking issues at OVH you may experience problems
+      connecting to our service. If you have the addresses for any of
+      our Insomnia Midnight Project endpoints, those should not be
+      affected.
 resolved:
   -
     date: 'Mar 11 2020'
