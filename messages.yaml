@@ -1,5 +1,12 @@
 ---
 ongoing:
+  -
+    date: 'Apr 19 2020'
+    title: 'Network outage'
+    body: >
+      We are working on our networking infrastructure and we're
+      experiencing some difficulties in the proces. Unforutnately
+      this is causing intermittent loss of connectivity.
 resolved:
   -
     date: 'Mar 30 2020'
