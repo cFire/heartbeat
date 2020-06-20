@@ -1,13 +1,14 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Jun 20 2020'
     title: 'Network outage'
     body: >
       We are experiencing an outage at our ISP. All major services are
       currently unreachable.
-      Update: Connectivity appears to be restored.
-resolved:
+
+      Update; Connectivity appears to be restored.
   -
     date: 'Apr 19 2020'
     title: 'Network outage'
