@@ -1,5 +1,12 @@
 ---
 ongoing:
+  -
+    date: 'Jul 22 2020'
+    title: 'Core network and server move'
+    body: >
+      We will be physically moving our core network and the bulk of our
+      servers to a new location. Expect a t least a few hours of downtime
+      for all our services apart from IRC and this status page.
 resolved:
   -
     date: 'Jun 20 2020'
