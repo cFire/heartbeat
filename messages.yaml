@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Aug 13 2020'
+    title: 'Gateway outage'
+    body: >
+      An outage at an upstream provider has caused our gateway to go down.
+      Their current estimates say it should be resolved within the hour.
 resolved:
   -
     date: 'Jul 22 2020'
