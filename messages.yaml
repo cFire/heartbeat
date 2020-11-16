@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Nov 16 2020'
     title: 'Upstream network outage'
@@ -7,7 +8,6 @@ ongoing:
       There appears to be a major outage at one of our upstream providers.
       We are monitoring the situation but we cannot do much besides wait for
       them to fix it.
-resolved:
   -
     date: 'Aug 13 2020'
     title: 'Gateway outage'
