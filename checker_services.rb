@@ -56,7 +56,7 @@ class CheckHTTP < CheckService
   rescue OpenURI::HTTPRedirect, OpenURI::HTTPError => e
     @status = e.to_s.include?(@parameters['expect']) ? 'OK' : 'WARNING'
   rescue StandardError => e
-    STDERR.puts e
+    $stderr.puts e
   end
   # rubocop:enable Security/Open
 end
@@ -74,7 +74,7 @@ class CheckTCP < CheckService
         socket_check
       end
     rescue StandardError => e
-      STDERR.puts e
+      $stderr.puts e
     end
 
     @response_time = (Time.now.to_f * 1000 - start).floor
