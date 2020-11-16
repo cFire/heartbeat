@@ -7,11 +7,7 @@ end
 class CheckService
   require 'timeout'
 
-  attr_reader :server
-  attr_reader :service
-  attr_reader :status
-  attr_reader :response_time
-  attr_reader :check_time
+  attr_reader :server, :service, :status, :response_time, :check_time
 
   def initialize(server, service, address, parameters)
     @server        = server

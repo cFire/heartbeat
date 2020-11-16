@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'yaml'
-require './checker_services.rb'
+require './checker_services'
 
 services     = YAML.load_file('services.yaml')
 service_list = []
