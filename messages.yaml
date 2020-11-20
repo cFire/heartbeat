@@ -1,5 +1,12 @@
 ---
 ongoing:
+  -
+    date: 'Nov 24 2020'
+    title: 'Planned ISP network maintenance'
+    body: >
+      Our ISP is doing planned maintenance on the 24th of Nov. The expected
+      downtime is around 10 mintues. This will impact most services with the
+      exception of our IRC network and this page.
 resolved:
   -
     date: 'Nov 16 2020'
