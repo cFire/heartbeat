@@ -1,5 +1,12 @@
 ---
 ongoing:
+  -
+    date: 'Jul 8 2021'
+    title: 'Main server down'
+    body: >
+      After a brief power outage earlier today our main server is unfortunately
+      failing to boot. We are investigating the issue and preparing spare
+      hardware in case the main server cannot be repaired in a timely manner.
 resolved:
   -
     date: 'Nov 24 2020'
