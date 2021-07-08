@@ -10,6 +10,8 @@ ongoing:
 
       Update; We have identified the power backplain has failed in the server
       and are working to commission replacement hardware.
+
+      Update; We are now running on spare hardware for at least the next few days.
 resolved:
   -
     date: 'Nov 24 2020'
