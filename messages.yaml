@@ -1,12 +1,12 @@
 ---
 ongoing:
   -
-    date: 'Jul 27 2021'
+    date: 'Jul 26 2021'
     title: 'Main server replacement'
     body: >
       At the start of the month our main server suffered some damage after a
       power outage and we have been running on spare hardware ever since.
-      This Tuesday (July 27th) we are planning to replace it with the new
+      This Monday (July 26th) we are planning to replace it with the new
       permanent hardware setup. Expect half an hour or so of downtime while
       we make the switchover.
 resolved:
