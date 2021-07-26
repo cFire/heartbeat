@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Jul 26 2021'
     title: 'Main server replacement'
@@ -9,7 +10,6 @@ ongoing:
       This Monday (July 26th) we are planning to replace it with the new
       permanent hardware setup. Expect half an hour or so of downtime while
       we make the switchover.
-resolved:
   -
     date: 'Jul 8 2021'
     title: 'Main server down'
