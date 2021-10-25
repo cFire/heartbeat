@@ -27,7 +27,7 @@
       type: http
       port: 443
       ssl: true
-      get: '/'
+      get: '/news'
       vhost: 'www.insomnia247.nl'
       expect: 'News - Insomnia 24/7'
     IMAPS:
