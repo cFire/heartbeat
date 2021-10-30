@@ -37,7 +37,7 @@ class CheckHTTP < CheckService
 
     uri_check
 
-    @response_time = (Time.now.to_f * 1000 - start).floor
+    @response_time = ((Time.now.to_f * 1000) - start).floor
     @check_time    = Time.now
   end
 
@@ -77,7 +77,7 @@ class CheckTCP < CheckService
       $stderr.puts e
     end
 
-    @response_time = (Time.now.to_f * 1000 - start).floor
+    @response_time = ((Time.now.to_f * 1000) - start).floor
     @check_time    = Time.now
   end
 
