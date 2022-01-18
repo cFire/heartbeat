@@ -39,6 +39,4 @@ service_list.each do |check|
   results[check.server][check.service]['responseTime'] = check.response_time
 end
 
-File.open('status.yaml', 'w') do |f|
-  f.write results.to_yaml
-end
+File.write('status.yaml', results.to_yaml)
