@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Jan 18 2022'
+    title: 'Networking equipment OS upgrades'
+    body: >
+      We will be performing full OS upgrades on our networking equipment
+      today. Expect a few short network interruptions as a result of this.
 resolved:
   -
     date: 'Jul 26 2021'
