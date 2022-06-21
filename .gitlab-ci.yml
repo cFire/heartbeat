@@ -6,13 +6,13 @@ rbsyntax:
   stage: syntax
   script:
     - find . -name '*\.rb' -exec bash -c 'echo -ne "{}\t\t\t" && ruby -c {}' \;
-  image: ruby:2.5
+  image: ruby:2.7
 ruby:
   stage: linting
   script:
     - gem install rubocop --no-document
     - rubocop -f s
-  image: ruby:2.5
+  image: ruby:2.7
 yaml:
   stage: linting
   script:
