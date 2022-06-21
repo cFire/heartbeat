@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Jun 21 2022'
+    title: 'ISP outage'
+    body: >
+      Our ISP is experiencing an outage. Their current estimate is the outage
+      will last a few hours.
 resolved:
   -
     date: 'Jan 18 2022'
