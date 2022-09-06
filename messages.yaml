@@ -8,6 +8,10 @@ ongoing:
       is currently read-only and a great number of files are unable to be read properly.
       Naturally we are extremely concerned about this turn of events and are doing all
       we can to diagnose and resolve the issue.
+
+      Update: There is indeed a very serious issue with the storage array.
+      Many files are missing or partially zeroed out. We are most likely looking at
+      restoring from last nights backups.
 resolved:
   -
     date: 'Jun 21 2022'
