@@ -1,5 +1,13 @@
 ---
 ongoing:
+  -
+    date: 'Sept 09 2022'
+    title: RAID Array issues
+    body: >
+      We are having issues with our main storage array on the server. The filesystem
+      is currently read-only and a great number of files are unable to be read properly.
+      Naturally we are extremely concerned about this turn of events and are doing all
+      we can to diagnose and resolve the issue.
 resolved:
   -
     date: 'Jun 21 2022'
