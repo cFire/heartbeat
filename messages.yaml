@@ -12,6 +12,9 @@ ongoing:
       Update: There is indeed a very serious issue with the storage array.
       Many files are missing or partially zeroed out. We are most likely looking at
       restoring from last nights backups.
+
+      Update: The server has been been re-provisioned running on new drives for the storage
+      array and a backup from the night preceding the incident has been restored.
 resolved:
   -
     date: 'Jun 21 2022'
