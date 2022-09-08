@@ -4,17 +4,21 @@ ongoing:
     date: 'Sept 09 2022'
     title: RAID Array issues
     body: >
-      We are having issues with our main storage array on the server. The filesystem
-      is currently read-only and a great number of files are unable to be read properly.
-      Naturally we are extremely concerned about this turn of events and are doing all
-      we can to diagnose and resolve the issue.
+      We are having issues with our main storage array on the server. The
+      filesystem is currently read-only and a great number of files are unable
+      to be read properly. Naturally we are extremely concerned about this turn
+      of events and are doing all we can to diagnose and resolve the issue.
 
       Update: There is indeed a very serious issue with the storage array.
-      Many files are missing or partially zeroed out. We are most likely looking at
-      restoring from last nights backups.
+      Many files are missing or partially zeroed out. We are most likely looking
+      at restoring from last nights backups.
 
-      Update: The server has been been re-provisioned running on new drives for the storage
-      array and a backup from the night preceding the incident has been restored.
+      Update: The server has been been re-provisioned running on new drives for
+      the storage array and a backup from the night preceding the incident has
+      been restored.
+
+      Update: The restore has been completed. Due to compounding issues, some
+      databases had to be restored from an older backup.
 resolved:
   -
     date: 'Jun 21 2022'
