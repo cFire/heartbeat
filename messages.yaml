@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Sept 06 2022'
     title: RAID Array issues
@@ -19,7 +20,6 @@ ongoing:
 
       Update: The restore has been completed. Due to compounding issues, some
       databases had to be restored from an older backup.
-resolved:
   -
     date: 'Jun 21 2022'
     title: 'ISP outage'
