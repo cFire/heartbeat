@@ -1,12 +1,12 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Nov 25 2022'
     title: Uplink maintenance
     body: >
       Our main uplink will be down for a short while for maintenance. We expect
       everything to be back online in less than an hour.
-resolved:
   -
     date: 'Sept 06 2022'
     title: RAID Array issues
