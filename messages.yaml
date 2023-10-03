@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Oct 5 2023'
+    title: ISP network maintenance
+    body: >
+      Our main ISP will be conducting network maintenance which may result in a
+      temporary degradation or drop of our core services during the day.
 resolved:
   -
     date: 'May 17 2023'
