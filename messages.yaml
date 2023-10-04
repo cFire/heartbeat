@@ -6,6 +6,13 @@ ongoing:
     body: >
       Our main ISP will be conducting network maintenance which may result in a
       temporary degradation or drop of our core services during the day.
+  -
+    date: 'Oct 7 2023'
+    title: IRC server updates
+    body: >
+      We will be updating our IRC servers to a new version of UnrealIRCd. We
+      expect active connections to be interrupted as well as a few minutes of
+      downtime for the IRC network. All other services are unaffected.
 resolved:
   -
     date: 'May 17 2023'
