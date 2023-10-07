@@ -1,5 +1,6 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Oct 7 2023'
     title: IRC server updates
@@ -7,7 +8,6 @@ ongoing:
       We will be updating our IRC servers to a new version of UnrealIRCd. We
       expect active connections to be interrupted as well as a few minutes of
       downtime for the IRC network. All other services are unaffected.
-resolved:
   -
     date: 'Oct 5 2023'
     title: ISP network maintenance
