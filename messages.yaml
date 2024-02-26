@@ -5,7 +5,7 @@ ongoing:
     title: Debian 12 upgrade
     body: >
       This weekend we will be updating to Debian 12. Expect some breakages and
-      at least on server reboot.
+      at least one server reboot.
 resolved:
   -
     date: 'Oct 7 2023'
