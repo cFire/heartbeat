@@ -1,12 +1,12 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Mar 2 2024'
     title: Debian 12 upgrade
     body: >
       This weekend we will be updating to Debian 12. Expect some breakages and
       at least one server reboot.
-resolved:
   -
     date: 'Oct 7 2023'
     title: IRC server updates
