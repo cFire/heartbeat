@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Mar 13 2024'
+    title: 'ISP network maintenance'
+    body: >
+      Today an engineer from our ISP will be working on the uplink line so
+      expect some service interruptions for our main network and core servers.
 resolved:
   -
     date: 'Mar 2 2024'
