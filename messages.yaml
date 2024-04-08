@@ -1,12 +1,12 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Apr 4 2024'
     title: 'Gateway migration'
     body: >
       Our upstream gateway is being migrated to new hardware, this means it
       will go down for a few minutes today.
-resolved:
   -
     date: 'Mar 13 2024'
     title: 'ISP network maintenance'
