@@ -50,7 +50,7 @@ class CheckHTTP < CheckService
   # rubocop:disable Security/Open
   def uri_check
     Timeout.timeout(10) do
-      doc = Nokogiri::HTML open(uri_builder, redirect: false)
+      doc = Nokogiri::HTML URI.open(uri_builder, redirect: false).read
       @status = doc.to_s.include?(@parameters['expect']) ? 'OK' : 'WARNING'
     end
   rescue OpenURI::HTTPRedirect, OpenURI::HTTPError => e

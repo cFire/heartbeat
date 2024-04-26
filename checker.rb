@@ -5,7 +5,6 @@ require './checker_services'
 
 services     = YAML.load_file('services.yaml')
 service_list = []
-thread_list  = []
 results      = {}
 
 services.each do |server, options|
@@ -24,8 +23,8 @@ services.each do |server, options|
   end
 end
 
-service_list.each do |check|
-  thread_list.push(Thread.new { check.run })
+thread_list = service_list.map do |check|
+  Thread.new { check.run }
 end
 
 thread_list.each(&:join)
