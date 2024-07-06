@@ -1,12 +1,12 @@
 ---
 ongoing:
+resolved:
   -
     date: 'Jul 6 2024'
     title: 'Server maintenance'
     body: >
       This weekend we will be peforming some maintenance on our main server.
       We are expecting about 30 minutes of down-time.
-resolved:
   -
     date: 'Apr 4 2024'
     title: 'Gateway migration'
