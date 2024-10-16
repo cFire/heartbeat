@@ -16,7 +16,7 @@
       type: tcp
       port: 25
       ssl: false
-      expect: '220 gateway02.insomnia247.nl ESMTP Postfix'
+      expect: '220 mail.insomnia247.nl ESMTP Postfix'
     HTTP:
       type: http
       port: 80
