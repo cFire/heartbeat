@@ -6,7 +6,7 @@ require 'yaml'
 
 get '/' do
   @title    = 'Service status - Insomnia 24/7'
-  @content  = YAML.load_file('status.yaml')
+  @content  = YAML.load_file('status.yaml', permitted_classes: [Time])
   @messages = YAML.load_file('messages.yaml')
 
   if request.user_agent.match?(/wget|curl|httpie/i)
