@@ -1,5 +1,11 @@
 ---
 ongoing:
+  -
+    date: 'Aug 20 2025'
+    title: 'Power maintenance'
+    body: >
+      Power company is doing work today, this will likely cause some
+      interruptions.
 resolved:
   -
     date: 'Jul 6 2024'
